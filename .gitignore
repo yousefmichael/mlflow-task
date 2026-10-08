@@ -1,0 +1,13 @@
+# 1. Create a .gitignore file ignoring venv and mlruns
+echo "venv/" > .gitignore
+echo "mlruns/" >> .gitignore
+echo "__pycache__/" >> .gitignore
+
+# 2. Initialize a local Git repository
+git init
+
+# 3. Stage the required assignment files
+git add train.py requirements.txt README.md mlflow_ui.png .gitignore
+
+# 4. Save your snapshot (commit)
+git commit -m "feat: complete MLflow experiment tracking assignment"
